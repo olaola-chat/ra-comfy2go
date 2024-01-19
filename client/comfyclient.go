@@ -252,6 +252,7 @@ func (c *ComfyClient) OnWindowSocketMessage(msg string) {
 			mdata := &PromptMessageData{
 				NodeID: s.Node,
 				Images: *s.Output["images"],
+				Gifs:   *s.Output["gifs"],
 			}
 			m := PromptMessage{
 				Type:    "data",

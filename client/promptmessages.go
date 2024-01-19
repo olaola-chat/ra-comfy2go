@@ -49,6 +49,7 @@ func (p *PromptMessage) ToPromptMessageProgress() *PromptMessageProgress {
 type PromptMessageData struct {
 	NodeID int
 	Images []DataOutputImages
+	Gifs   []DataOutputImages
 }
 
 func (p *PromptMessage) ToPromptMessageData() *PromptMessageData {
